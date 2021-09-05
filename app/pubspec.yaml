@@ -8,10 +8,30 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
   cupertino_icons: ^1.0.2
 
+  # Packages
+  view:
+    path: ../presentation/view
+  controller:
+    path: ../presentation/controller
+  model:
+    path: ../domain/model
+  domain_repository:
+    path: ../domain/repository
+  usecase:
+    path: ../domain/usecase
+  api:
+    path: ../data/api
+  mapper:
+    path: ../data/mapper
+  data_repository:
+    path: ../data/repository
+  common:
+    path: ../common
+
 dev_dependencies:
+  flutter_lints: ^1.0.4
   flutter_test:
     sdk: flutter
 

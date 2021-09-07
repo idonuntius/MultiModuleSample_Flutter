@@ -80,14 +80,12 @@ mixin _$ReposControllerState {
 
 /// @nodoc
 abstract class $ReposControllerStateCopyWith<$Res> {
-  factory $ReposControllerStateCopyWith(ReposControllerState value,
-          $Res Function(ReposControllerState) then) =
+  factory $ReposControllerStateCopyWith(ReposControllerState value, $Res Function(ReposControllerState) then) =
       _$ReposControllerStateCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class _$ReposControllerStateCopyWithImpl<$Res>
-    implements $ReposControllerStateCopyWith<$Res> {
+class _$ReposControllerStateCopyWithImpl<$Res> implements $ReposControllerStateCopyWith<$Res> {
   _$ReposControllerStateCopyWithImpl(this._value, this._then);
 
   final ReposControllerState _value;
@@ -97,15 +95,12 @@ class _$ReposControllerStateCopyWithImpl<$Res>
 
 /// @nodoc
 abstract class _$InitCopyWith<$Res> {
-  factory _$InitCopyWith(_Init value, $Res Function(_Init) then) =
-      __$InitCopyWithImpl<$Res>;
+  factory _$InitCopyWith(_Init value, $Res Function(_Init) then) = __$InitCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InitCopyWithImpl<$Res> extends _$ReposControllerStateCopyWithImpl<$Res>
-    implements _$InitCopyWith<$Res> {
-  __$InitCopyWithImpl(_Init _value, $Res Function(_Init) _then)
-      : super(_value, (v) => _then(v as _Init));
+class __$InitCopyWithImpl<$Res> extends _$ReposControllerStateCopyWithImpl<$Res> implements _$InitCopyWith<$Res> {
+  __$InitCopyWithImpl(_Init _value, $Res Function(_Init) _then) : super(_value, (v) => _then(v as _Init));
 
   @override
   _Init get _value => super._value as _Init;
@@ -188,17 +183,13 @@ abstract class _Init implements ReposControllerState {
 
 /// @nodoc
 abstract class _$InProgressCopyWith<$Res> {
-  factory _$InProgressCopyWith(
-          _InProgress value, $Res Function(_InProgress) then) =
-      __$InProgressCopyWithImpl<$Res>;
+  factory _$InProgressCopyWith(_InProgress value, $Res Function(_InProgress) then) = __$InProgressCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$InProgressCopyWithImpl<$Res>
-    extends _$ReposControllerStateCopyWithImpl<$Res>
+class __$InProgressCopyWithImpl<$Res> extends _$ReposControllerStateCopyWithImpl<$Res>
     implements _$InProgressCopyWith<$Res> {
-  __$InProgressCopyWithImpl(
-      _InProgress _value, $Res Function(_InProgress) _then)
+  __$InProgressCopyWithImpl(_InProgress _value, $Res Function(_InProgress) _then)
       : super(_value, (v) => _then(v as _InProgress));
 
   @override
@@ -282,17 +273,13 @@ abstract class _InProgress implements ReposControllerState {
 
 /// @nodoc
 abstract class _$LoadedCopyWith<$Res> {
-  factory _$LoadedCopyWith(_Loaded value, $Res Function(_Loaded) then) =
-      __$LoadedCopyWithImpl<$Res>;
+  factory _$LoadedCopyWith(_Loaded value, $Res Function(_Loaded) then) = __$LoadedCopyWithImpl<$Res>;
   $Res call({List<Repo> repos});
 }
 
 /// @nodoc
-class __$LoadedCopyWithImpl<$Res>
-    extends _$ReposControllerStateCopyWithImpl<$Res>
-    implements _$LoadedCopyWith<$Res> {
-  __$LoadedCopyWithImpl(_Loaded _value, $Res Function(_Loaded) _then)
-      : super(_value, (v) => _then(v as _Loaded));
+class __$LoadedCopyWithImpl<$Res> extends _$ReposControllerStateCopyWithImpl<$Res> implements _$LoadedCopyWith<$Res> {
+  __$LoadedCopyWithImpl(_Loaded _value, $Res Function(_Loaded) _then) : super(_value, (v) => _then(v as _Loaded));
 
   @override
   _Loaded get _value => super._value as _Loaded;
@@ -327,18 +314,15 @@ class _$_Loaded implements _Loaded {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other is _Loaded &&
-            (identical(other.repos, repos) ||
-                const DeepCollectionEquality().equals(other.repos, repos)));
+            (identical(other.repos, repos) || const DeepCollectionEquality().equals(other.repos, repos)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(repos);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(repos);
 
   @JsonKey(ignore: true)
   @override
-  _$LoadedCopyWith<_Loaded> get copyWith =>
-      __$LoadedCopyWithImpl<_Loaded>(this, _$identity);
+  _$LoadedCopyWith<_Loaded> get copyWith => __$LoadedCopyWithImpl<_Loaded>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -403,17 +387,13 @@ abstract class _Loaded implements ReposControllerState {
 
 /// @nodoc
 abstract class _$FailedCopyWith<$Res> {
-  factory _$FailedCopyWith(_Failed value, $Res Function(_Failed) then) =
-      __$FailedCopyWithImpl<$Res>;
+  factory _$FailedCopyWith(_Failed value, $Res Function(_Failed) then) = __$FailedCopyWithImpl<$Res>;
   $Res call({Exception exception});
 }
 
 /// @nodoc
-class __$FailedCopyWithImpl<$Res>
-    extends _$ReposControllerStateCopyWithImpl<$Res>
-    implements _$FailedCopyWith<$Res> {
-  __$FailedCopyWithImpl(_Failed _value, $Res Function(_Failed) _then)
-      : super(_value, (v) => _then(v as _Failed));
+class __$FailedCopyWithImpl<$Res> extends _$ReposControllerStateCopyWithImpl<$Res> implements _$FailedCopyWith<$Res> {
+  __$FailedCopyWithImpl(_Failed _value, $Res Function(_Failed) _then) : super(_value, (v) => _then(v as _Failed));
 
   @override
   _Failed get _value => super._value as _Failed;
@@ -449,18 +429,15 @@ class _$_Failed implements _Failed {
     return identical(this, other) ||
         (other is _Failed &&
             (identical(other.exception, exception) ||
-                const DeepCollectionEquality()
-                    .equals(other.exception, exception)));
+                const DeepCollectionEquality().equals(other.exception, exception)));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(exception);
+  int get hashCode => runtimeType.hashCode ^ const DeepCollectionEquality().hash(exception);
 
   @JsonKey(ignore: true)
   @override
-  _$FailedCopyWith<_Failed> get copyWith =>
-      __$FailedCopyWithImpl<_Failed>(this, _$identity);
+  _$FailedCopyWith<_Failed> get copyWith => __$FailedCopyWithImpl<_Failed>(this, _$identity);
 
   @override
   @optionalTypeArgs
